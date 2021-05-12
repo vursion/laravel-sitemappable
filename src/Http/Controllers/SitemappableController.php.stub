@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Vursion\LaravelSitemappable\Http\Controllers\SitemappableController as Controller;
+
+class SitemappableController extends Controller
+{
+	protected function otherRoutes()
+	{
+		return [];
+	}
+}
