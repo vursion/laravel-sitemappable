@@ -71,7 +71,7 @@ The required steps to make a model sitemappable are:
 
 Here's an example of a model:
 
-```
+```php
 use Illuminate\Database\Eloquent\Model;
 use Vursion\LaravelSitemappable\IsSitemappable;
 
