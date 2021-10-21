@@ -92,6 +92,12 @@ class SitemappableTest extends TestCase
                                 <xhtml:link rel="alternate" hreflang="en" href="https://www.vursion.io/en/tests/test-slug-in-english"></xhtml:link>
                                 <lastmod>' . $testModel->updated_at->toIso8601String() . '</lastmod>
                             </url>
+                             <url>
+                                <loc>https://www.vursion.io/en/tests/test-slug-in-english</loc>
+                                <xhtml:link rel="alternate" hreflang="nl" href="https://www.vursion.io/nl/testen/test-slug-in-het-nederlands"></xhtml:link>
+                                <xhtml:link rel="alternate" hreflang="en" href="https://www.vursion.io/en/tests/test-slug-in-english"></xhtml:link>
+                                <lastmod>' . $testModel->updated_at->toIso8601String() . '</lastmod>
+                            </url>
                         </urlset>');
 
         $this->assertXmlStringEqualsXmlString($expected, $response->getContent());
