@@ -24,7 +24,7 @@ class SitemappableServiceProvider extends ServiceProvider
        		], 'migrations');
 
 			$this->publishes([
-				__DIR__ . '/../src/Http/Controllers/SitemappableController.php.stub' => app_path('Http\Controllers\SitemappableController.php'),
+				__DIR__ . '/../src/Http/Controllers/SitemappableController.php.stub' => app_path('Http/Controllers/SitemappableController.php'),
 			], 'controllers');
 		}
 	}
