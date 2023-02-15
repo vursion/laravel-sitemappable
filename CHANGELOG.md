@@ -5,6 +5,9 @@ All notable changes to `laravel-sitemappable` will be documented in this file
 ## 1.5.0 - 2023-02-15
 - Support Laravel 10
 
+## 1.4.1 - 2022-12-09
+- Support PHP 8.2 (exclude Laravel 6 from PHP 8.2 tests)
+
 ## 1.4.0 - 2022-12-09
 - Support PHP 8.2
 
