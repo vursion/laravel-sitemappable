@@ -2,6 +2,9 @@
 
 All notable changes to `laravel-sitemappable` will be documented in this file
 
+## 1.8.0 - 2024-11-25
+- Support PHP 8.4
+
 ## 1.7.0 - 2024-03-13
 - Support Laravel 11
 
