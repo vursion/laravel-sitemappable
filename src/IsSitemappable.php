@@ -4,6 +4,8 @@ namespace Vursion\LaravelSitemappable;
 
 trait IsSitemappable
 {
+	abstract public function shouldBeSitemappable();
+
 	protected static function bootIsSitemappable()
 	{
 		static::saved(function ($model) {
@@ -45,16 +47,6 @@ trait IsSitemappable
 				$sitemap->delete();
 			}
 		}
-	}
-
-	/**
-	 * Determine if the model should be sitemappable.
-	 *
-	 * @return bool
-	 */
-	public function shouldBeSitemappable()
-	{
-		return true;
 	}
 
 	/**
