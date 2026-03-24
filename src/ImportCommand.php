@@ -65,6 +65,8 @@ class ImportCommand extends Command
 					'entity_id'   => $model->id,
 					'entity_type' => $class,
 					'urls'        => $model->toSitemappableArray(),
+					'created_at'  => ($model->created_at ?? null),
+					'updated_at'  => ($model->updated_at ?? null),
 				]);
 			}
 		});

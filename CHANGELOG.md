@@ -2,6 +2,9 @@
 
 All notable changes to `laravel-sitemappable` will be documented in this file
 
+## 1.12.0 - 2026-03-24
+- Persist model created_at and updated_at timestamps to Sitemap entries
+
 ## 1.11.0 - 2026-03-24
 - Make shouldBeSitemappable an abstract method
 

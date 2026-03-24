@@ -30,7 +30,9 @@ trait IsSitemappable
 			'entity_type' => get_class($model),
 		]);
 		$sitemap->restore();
-		$sitemap->urls = $model->toSitemappableArray();
+		$sitemap->urls       = $model->toSitemappableArray();
+		$sitemap->created_at = ($model->created_at ?? null);
+		$sitemap->updated_at = ($model->updated_at ?? null);
 		$sitemap->save();
 	}
 
